@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LB-Cardans</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body style="min-height: 100vh;">
+    <header>
+        <input type="text" id="pesquisa" class="pesquisa" name="pesquisa" placeholder="Pesquisar">
+        <span class="material-icons">
+            search
+        </span>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Cadastro</a>
+            <a href="#">Contato</a>
+            <a href="#" class="a">Catálogo</a>
+        </nav>
+    </header>
+    <div class="sombra"></div>
+    <div class="cover"></div>
+    <main>
+        <div class="logo" id="logo">
+            <h1>LB-Cardans</h1>
+        </div>
+        <div class="formulário" id="formulario">
+            <div class="box">
+                <div class="shadow"></div>
+                <div class="content">
+                    <form action="#" class="form" autocomplete="off">
+                        <h3 class="log">
+                            <span class="material-symbols-outlined">
+                            key
+                            </span></h3>
+                        <h2>Entrar</h2>
+                        <div class="inputBox">
+                            <input type="text" id="input" name="User" class="User" required>
+                            <span class="material-symbols-outlined">
+                                person
+                            </span>
+                            <section>Usuário</section>
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" id="input" name="password" class="password" required>
+                            <span class="material-symbols-outlined">
+                                lock
+                            </span>
+                            <section>Senha</section>
+                        </div>
+                        <div class="links">
+                            <a href="#">                               
+                                 <span class="material-symbols-outlined">
+                                account_circle
+                                </span>Esqueceu a senha?</a>
+                            <a href="#">
+                                <span class="material-symbols-outlined">
+                                account_circle
+                                </span>Cadastrar
+                            </a>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" value="Login" id="submit" name="submit" class="submit" required>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="sobre">
+            <a href="#">Sobre</a>
+        </div>
+    </footer>
+    <script>
+        const logo = document.getElementById('logo')
+        const subst = document.getElementById("formulario")
+        const form = document.getElementById("input")
+        const tudo = document.querySelector("body")
+        const click = form.addEventListener('click', () =>{
+            logo.classList.add("novo");      
+        })
+        logo.addEventListener('mouseover', () =>{
+            logo.classList.add("vasco");
+        })
+        logo.addEventListener('mouseout', () =>{
+            logo.classList.remove("vasco");
+            logo.classList.add("logo");
+        })
+        subst.addEventListener('mouseover', () =>{
+            logo.classList.remove("vasco");      
+            logo.classList.add("logo");             
+            logo.classList.add("vasco");
+        })
+        subst.addEventListener('mouseout', () =>{
+            logo.classList.remove("vasco");      
+            logo.classList.add("logo");             
+        });
+        if (click == true){
+            logo.classList.add("novo");
+        }else{
+            logo.classList.remove("novo");
+        };
+
+    </script>
+</body>
+</html>

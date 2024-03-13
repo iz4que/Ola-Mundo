@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px;
+    background-color: #1e409a;
+}
+.pesquisa {
+    position: absolute;
+    height: 3.5%;
+    width: 15%;
+    border-radius: 12px;
+    padding: 0 10px 0 43px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    outline: none;
+    background: rgb(0, 0, 0);
+    color: white;
+}
+.pesquisa::placeholder{
+    color: white;
+    padding-left: 1px;
+}
+.material-icons{
+    position: relative;
+    right: -6px;
+    border-right: 1px white solid;
+    color: white;
+    padding-right: 8px;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav a{
+    color: white;
+    margin-right: 100px;
+    padding: 4.5px;
+}
+nav a:hover{
+    color: white;
+    text-shadow: 0px 0px 1.5px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 13px;
+}
+.a{
+    margin-right: 50px;
+}
+main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1e409a;
+    width: 30%;
+    height: 75%;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 12px 10px 30px 1px;
+}
+.logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0px 0px 5px;
+    white-space: nowrap;
+    border: 2px black solid;
+    border-left: 2px solid black;
+    background-color: #1e409a;
+    z-index: 10;
+    transform: translateX(0%);
+    transition: 2s;
+}
+.logo h1{
+    font-size: 550%;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0px 0px 5px;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(255, 255, 255, 0.2));
+    line-height: 65px;
+    animation: neon 3s alternate infinite;
+}
+@keyframes neon{
+    0%{
+        text-shadow: 0px 0 2px;
+    }
+    100%{
+        text-shadow: 0px 0px 10px;
+    }
+}
+.sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formulário{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.vasco{
+    transform: translateX(100%);
+    transition: 2s;
+}
+main .box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+main .box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 35px;
+    background: linear-gradient(#fff, #fff, #e3e3e3);
+    filter: blur(1px);
+    z-index: 1;
+}
+main .box::after{
+    content: "";
+    position: absolute;
+    top: 1;
+    right: -1px;
+    height: 100%;
+    width: 35px;
+    background: #9d9d9d;
+    filter: blur(1px);
+    z-index: 1;
+}
+main .box .shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+}
+main .box .shadow::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(100% + 180px);
+    width: 120%;
+    height: 240%;
+    background: linear-gradient(rgba(0,0,0,0.1), transparent);
+    transform: skewX(45deg);
+}
+.sombra{
+    position: absolute;
+    top: 120px;
+    left: calc(43% + 180px);
+    width: 36.8%;
+    height: 100%;
+    background:linear-gradient(rgba(0,0,0,0.1), rgba(255,255,255,1));
+    transform: skewX(45deg);
+}
+.sombra::before{
+    content: "";
+    position: absolute;
+    top: 707px;
+    left: calc(-104.3% + 180px);
+    width: 78.6%;
+    height: 100%;
+    background:linear-gradient(rgba(0,0,0,0.1), rgba(255,255,255,1));
+    transform: skewX(0deg);
+}
+.cover{
+    position: absolute;
+    top: 120px;
+    left: 480px;
+    width: 200px;
+    height: 150px;
+    background: white;
+}
+.content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#dbdae1, #a3aaba);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
+    15px 15px 15px rgba(0, 0, 0, 0.1),
+    20px 10px 20px rgba(0, 0, 0, 0.1),
+    50px 50px 80px rgba(0, 0, 0, 0.25),
+    inset 3px 3px 2px #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+.content .form{
+    position: relative;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.log{
+    width: 100px;
+    height: 100px;
+    background: #444;
+    color: #fff;
+    font-size: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.log .material-symbols-outlined{
+    font-size: 50px;
+}
+.content .form h2{
+    font-size: 4em;
+    color: #444;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+.content .form .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.content .form .inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0 2px 35px;
+    font-size: 1.25em;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    border-bottom: 3px solid #444;
+    outline: none;
+    color: #444;
+    margin-top: 20px;
+}
+.content .form .inputBox span{
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    font-size: 1.90em;
+    color: #444;
+    transform: translateY(13px);
+}
+.content .form .inputBox section{
+    position: absolute;
+    left: 15px;
+    padding: 10px 0 10px 25px;
+    font-size: 1.25em;
+    pointer-events: none;
+    color: #444;
+    transition: 0.5s;
+    transform: translateY(-35px);
+}
+.content .form .inputBox input:focus ~ section,
+.content .form .inputBox input:valid ~ section{
+    transform: translateY(-60px);
+    font-size: 0.9em;
+    background: #444;
+    color: #fff;
+    padding: 2px 4px;
+}
+.content .form .links{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 400px;
+}
+.content .form .links a{
+    color: #444;
+    text-decoration: none;
+    padding-right: 50px;
+    padding-left: 30px;
+}
+.content .form .links a:hover{
+    color: rgb(0, 0, 0);
+}
+.content .form .inputBox input[type="submit"]{
+    background: #444;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 50px;
+}
+.content .form .inputBox input[type="submit"]:hover{
+    background: #333;
+}
+.novo{
+    transform: translateX(100%);
+    transition: 2s;
+}
+
+
+
+

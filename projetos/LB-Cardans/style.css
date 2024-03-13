@@ -1,0 +1,124 @@
+.logo{
+    margin: 10px ;
+    margin-left: 80px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;/*Espaços das letras*/
+    text-shadow: 2px 2px 4px #fff;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    width: 100%;
+    padding: 30px, 100px;
+    display: flex;
+    justify-content: space-between;/*Alinha horizontalmente os itens*/
+    z-index: 2;
+    background: #1e409a;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    z-index: 200;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+    display: inline;
+}
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+section{
+    position: absolute;
+    bottom: 300px;
+    left:  100px;
+    text-align: center;
+    z-index: 2;
+}
+header ul li .a{
+    margin-right: 80px;
+}
+header ul li a:hover{
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px #fff;
+}
+section h1{
+    padding: 3px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    background-color: #0652DD;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 7px #0652DD;
+    opacity: 0.8;
+    z-index: 2;
+}
+section p{
+   color: black;
+   text-decoration: none;
+   letter-spacing: 1px;
+}
+.circulo{
+    position: absolute;
+    bottom: -170px;
+    right: -260px;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background: #1e409a;
+    z-index: 100;
+}
+.cardans{
+    width: 50%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 30%;
+    bottom: 150px;
+}
+.d1{
+    position: absolute;
+    bottom: 550px;
+    right: 40px;
+    width: 500px;
+    height: 250px;
+    background: #1e409a;
+    z-index: 101;
+}
+.d2{
+    position: absolute;
+    bottom: -60px;
+    right: 40px;
+    width: 500px;
+    height: 250px;
+    background: #1e409a;
+    z-index: 101;
+}
+.d2{
+    position: absolute;
+    bottom: -60px;
+    right: 40px;
+    width: 500px;
+    height: 250px;
+    background: white;
+    z-index: 101;
+}
+.d1{
+    position: absolute;
+    bottom: 550px;
+    right: 40px;
+    width: 500px;
+    height: 290px;
+    background: white;
+    z-index: 101;
+}
